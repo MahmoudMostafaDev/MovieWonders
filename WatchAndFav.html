@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MovieWanders</title>
+    <!-- tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+    <script src="tailwind.config.js"></script>
+    <!-- css -->
+
+    <link rel="stylesheet" href="main.css" />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Swiper -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  </head>
+
+  <body>
+    <div class="big-boss relative theGrandFatherContainer">
+      <div
+        class="absolute hidder hidden inset-0 z-10 backdrop-filter backdrop-blur-sm"
+      ></div>
+      <div
+        class="container z-10 mx-auto absolute top-0 left-1/2 -translate-x-1/2"
+      >
+        <nav class="flex flex-1 justify-between items-center">
+          <div class="img basis-1/5 sm:block hidden">
+            <img
+              class="lg:max-w-72 sm:max-w-60 max-w-40"
+              src="img/logo.png"
+              alt=""
+            />
+          </div>
+
+          <div class="basis-3/5 md:block hidden">
+            <ul
+              class="list-none flex mx-auto justify-center mt-5 text-lg text-gray-400 divide-x divide-gray-500"
+            >
+              <li><a href="index2.html" class="active p-5">Home</a></li>
+            </ul>
+          </div>
+          <div
+            class="buttons md:basis-2/5 basis-4/5 flex mt-5 justify-center sm:justify-end gap-2 mx-auto"
+          >
+            <button
+              class="btn btn-primary bg-accent-primary px-4 py-2 rounded-full font-medium"
+            >
+              <a href="WatchAndFav.html"
+                >WatchList & <i class="fa-solid fa-heart text-red-500"></i
+              ></a>
+            </button>
+            <button
+              class="btn btn-search rounded-full bg-accent-secondary w-10 h-10"
+            >
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+            <!-- menu button -->
+            <button
+              id="nav-btn"
+              class="rounded-full bg-accent-secondary w-10 h-10 md:hidden"
+            >
+              <i class="fa-solid fa-bars"></i>
+            </button>
+          </div>
+        </nav>
+        <ul
+          class="dissable menu md:hidden list-none transition duration-500 flex-row mx-auto justify-center mt-5 text-lg text-gray-400 divide-y text-center bg-primary rounded divide-gray-500"
+        >
+          <li class="py-3 hover:bg-secondary">
+            <a href="#" class="active p-5">Home</a>
+          </li>
+          <li class="py-3 hover:bg-secondary basis-1/3">
+            <a href="#" class="p-5 hover:text-white">Movies</a>
+          </li>
+          <li class="py-3 hover:bg-secondary basis-1/3">
+            <a href="#" class="p-5 hover:text-white">Tv shows</a>
+          </li>
+        </ul>
+      </div>
+      <div class="WatchList-container overflow-x-auto py-3 px-5 pt-32">
+        <h3 class="text-accent-secondary px-5">Hope you will enjoy</h3>
+        <h1 class="text-xl text-white font-bold px-5">WatchList</h1>
+        <div
+          class="flex WatchList mt-32 gap-5 overflow-visible flex-none lg:gap-24"
+        ></div>
+      </div>
+
+      <div class="Favourites-container overflow-x-auto py-3 px-5">
+        <h3 class="text-accent-secondary px-5">Wow you have perfect taste</h3>
+        <h1 class="text-xl text-white font-bold px-5">Favourites</h1>
+        <div
+          class="flex Favourites mt-32 gap-5 overflow-visible flex-none lg:gap-24"
+        ></div>
+      </div>
+    </div>
+
+    <footer class="mx-auto w-1/3">
+      <h1 class="text-center text-white my-10 text-xl">
+        all data is from the movie Db
+      </h1>
+      <img src="img/source.svg" class="max-w-72" alt="" />
+    </footer>
+
+    <!-- film pop up -->
+    <div
+      class="hidden rounded-3xl overflow-hidden shadow-3xl film-pop-up mx-auto mb-16 absolute top-32 left-1/2 -translate-x-1/2 z-30 container"
+    >
+      <div class="img">
+        <div class="layer relative">
+          <div
+            class="text absolute bottom-28 w-5/6 md:w-90 left-1/2 -translate-x-1/2 shadow-3xl bg-half-background rounded-xl p-4"
+          >
+            <h1 class="title text-white text-4xl">Name of the movie</h1>
+            <p class="genere text-gray-400 font-bold text-md my-2">
+              action , romance , drama
+            </p>
+            <div class="text-white text-lg mx-1">
+              <span class="rate">2.5</span>
+              <i class="fa-regular fa-star text-yellow-500"></i>
+            </div>
+            <p class="desc text-gray-300 my-5">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, in
+              ratione! Quos, quibusdam nam. Rerum dolorum sapiente dolores.
+              Nobis inventore quae et. Suscipit voluptas dolor perspiciatis ab
+              error dolore deleniti.
+            </p>
+            <div class="buttons flex align-center">
+              <button
+                class="btn btn-primary bg-accent-primary active:bg-accent-secondary px-4 py-2 rounded-full font-bold"
+              >
+                Let's see more
+              </button>
+              <a href="#" class="py-2 px-4 fav-btn"
+                ><i class="fa-regular fa-heart text-2xl text-red-500"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="global-rating p-10 bg-primary">
+        <h1 class="text-4xl text-white font-bold">Global Rating</h1>
+        <div class="rate-popup flex justify-center items-center flex-col my-24">
+          <div class="hider"></div>
+          <div class="speedometer" style="overflow: visible">
+            <svg class="svg" viewBox="0 0 100 100" style="overflow: visible">
+              <path
+                id="bar"
+                d="M 0,50 A 40 40 110 0 1 100,50"
+                fill="none"
+                stroke="#76ABAE"
+                ;
+                stroke-width="3"
+                stroke-dasharray="155, 150"
+              ></path>
+              <!-- max 155  min 0 -->
+            </svg>
+            <div class="ball"></div>
+          </div>
+          <div class="imdb flex items-center gap-4">
+            <p class="text-accent-primary text-4xl font-bold">
+              <span class="rate2"></span>
+            </p>
+            <img src="img/source.svg" class="w-16" alt="" />
+          </div>
+          <p class="text-gray-300 text-lg text-center">
+            <span class="vote-count"></span> ratings
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/7ff557ea03.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- script -->
+    <script src="scriptWatch.js"></script>
+  </body>
+</html>
