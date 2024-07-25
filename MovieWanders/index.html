@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MovieWanders</title>
+    <!-- tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+    <script src="tailwind.config.js"></script>
+    <!-- css -->
+
+    <link rel="stylesheet" href="main.css" />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Swiper -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  </head>
+
+  <body>
+    <nav
+      class="flex flex-1 justify-between items-center container mx-auto mt-3"
+    >
+      <div class="img sm:basis-1/5 block basis-1 mx-auto">
+        <img class="lg:max-w-72 max-w-60" src="img/logo.png" alt="" />
+      </div>
+
+      <div class="basis-4/5 md:block hidden text-end">
+        <h1 class="text-3xl text-white">Movies that you deserve</h1>
+      </div>
+    </nav>
+    <div
+      class="interests absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-secondary p-10 rounded-3xl w-5/6 lg:w-3/6"
+    >
+      <h1 class="text-3xl text-white text-center mb-10">
+        Choose your interests
+      </h1>
+      <div class="generes overflow-x-auto">
+        <div class="generes-one flex">
+          <button id="28">
+            <div class="genere w-32">
+              <img
+                src="img/action.png"
+                alt=""
+                class="w-24 h-24 rounded-full mx-auto active-interest"
+              />
+              <p class="text-xl text-white text-center mt-3">Action</p>
+            </div>
+          </button>
+          <button id="12">
+            <div class="genere w-32">
+              <img
+                src="img/adventure.png"
+                alt=""
+                class="w-24 h-24 rounded-full mx-auto"
+              />
+              <p class="text-xl text-white text-center mt-3">Adventure</p>
+            </div>
+          </button>
+          <button id="16">
+            <div class="genere w-32">
+              <img
+                src="img/animation.jpeg"
+                alt=""
+                class="w-24 h-24 rounded-full mx-auto"
+              />
+              <p class="text-xl text-white text-center mt-3">Animation</p>
+            </div>
+          </button>
+          <button id="35">
+            <div class="genere w-32">
+              <img
+                src="img/comedy.png"
+                alt=""
+                class="w-24 h-24 rounded-full mx-auto"
+              />
+              <p class="text-xl text-white text-center mt-3">Comedy</p>
+            </div>
+          </button>
+          <button id="80">
+            <div class="genere w-32">
+              <img
+                src="img/crime.png"
+                alt=""
+                class="w-24 h-24 rounded-full mx-auto"
+              />
+              <p class="text-xl text-white text-center mt-3">Crime</p>
+            </div>
+          </button>
+          <button id="99">
+            <div class="genere w-32">
+              <img
+                src="img/domentary.jpg"
+                alt=""
+                class="w-24 h-24 rounded-full mx-auto"
+              />
+              <p class="text-xl text-white text-center mt-3">Documentary</p>
+            </div>
+          </button>
+          <button id="18">
+            <div class="genere w-32">
+              <img
+                src="img/drama.jpeg"
+                alt=""
+                class="w-24 h-24 rounded-full mx-auto"
+              />
+              <p class="text-xl text-white text-center mt-3">Drama</p>
+            </div>
+          </button>
+          <button id="10751">
+            <div class="genere w-32">
+              <img
+                src="img/family.jpg"
+                alt=""
+                class="w-24 h-24 rounded-full mx-auto"
+              />
+              <p class="text-xl text-white text-center mt-3">Family</p>
+            </div>
+          </button>
+          <button id="14">
+            <div class="genere w-32">
+              <img
+                src="img/fantasy.jpeg"
+                alt=""
+                class="w-24 h-24 rounded-full mx-auto"
+              />
+              <p class="text-xl text-white text-center mt-3">Fantasy</p>
+            </div>
+          </button>
+          <button id="36">
+            <div class="genere w-32">
+              <img
+                src="img/history.jpeg"
+                alt=""
+                class="w-24 h-24 rounded-full mx-auto"
+              />
+              <p class="text-xl text-white text-center mt-3">History</p>
+            </div>
+          </button>
+        </div>
+        <div class="generes-two flex mt-10">
+          <button id="27">
+            <div class="genere w-32">
+              <img
+                src="img/horror.jpg"
+                alt=""
+                class="w-24 h-24 rounded-full mx-auto"
+              />
+              <p class="text-xl text-white text-center mt-3">Horror</p>
+            </div>
+          </button>
+          <button id="10402">
+            <div class="genere w-32">
+              <img
+                src="img/music.jpg"
+                alt=""
+                class="w-24 h-24 rounded-full mx-auto"
+              />
+              <p class="text-xl text-white text-center mt-3">Music</p>
+            </div>
+          </button>
+          <button id="9648">
+            <div class="genere w-32">
+              <img
+                src="img/mystery.png"
+                alt=""
+                class="w-24 h-24 rounded-full mx-auto"
+              />
+              <p class="text-xl text-white text-center mt-3">Mystery</p>
+            </div>
+          </button>
+          <button id="10749">
+            <div class="genere w-32">
+              <img
+                src="img/romance.jpeg"
+                alt=""
+                class="w-24 h-24 rounded-full mx-auto"
+              />
+              <p class="text-xl text-white text-center mt-3">Romance</p>
+            </div>
+          </button>
+          <button id="878">
+            <div class="genere w-32">
+              <img
+                src="img/scince.jpeg"
+                alt=""
+                class="w-24 h-24 rounded-full mx-auto"
+              />
+              <p class="text-xl text-white text-center mt-3">Science Fiction</p>
+            </div>
+          </button>
+          <button id="10770">
+            <div class="genere w-32">
+              <img
+                src="img/tv movie.jpeg"
+                alt=""
+                class="w-24 h-24 rounded-full mx-auto"
+              />
+              <p class="text-xl text-white text-center mt-3">TV Movie</p>
+            </div>
+          </button>
+          <button id="53">
+            <div class="genere w-32">
+              <img
+                src="img/thriller.jpeg"
+                alt=""
+                class="w-24 h-24 rounded-full mx-auto"
+              />
+              <p class="text-xl text-white text-center mt-3">Thriller</p>
+            </div>
+          </button>
+          <button id="10752">
+            <div class="genere w-32">
+              <img
+                src="img/war.jpeg"
+                alt=""
+                class="w-24 h-24 rounded-full mx-auto"
+              />
+              <p class="text-xl text-white text-center mt-3">War</p>
+            </div>
+          </button>
+          <button id="37">
+            <div class="genere w-32">
+              <img
+                src="img/westren.jpeg"
+                alt=""
+                class="w-24 h-24 rounded-full mx-auto"
+              />
+              <p class="text-xl text-white text-center mt-3">Western</p>
+            </div>
+          </button>
+        </div>
+      </div>
+      <button
+        class="btn btn-primary start-journey bg-accent-primary px-4 py-3 rounded-full mx-auto block mt-10 text-2xl hover:bg-accent-secondary"
+      >
+        Start our journey
+      </button>
+    </div>
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/7ff557ea03.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- script -->
+
+    <script src="interestsScript.js"></script>
+  </body>
+</html>
